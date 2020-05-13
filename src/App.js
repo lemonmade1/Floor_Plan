@@ -3,10 +3,11 @@ import './App.css';
 
 import Bedroom1 from './components/Bedroom/Bedroom1';
 import Kitchen from './components/Kitchen/Kitchen';
-import Bath from './components/Bath/Bath';
-import LivingRoom from './components/LivingRoom/LivingRoom';
-import Bedroom3 from './components/Bedroom/Bedroom3';
+import FullBath from './components/Bath/FullBath';
 import Bedroom2 from './components/Bedroom/Bedroom2';
+import LivingRoom from './components/LivingRoom/LivingRoom';
+import HalfBath from './components/Bath/HalfBath';
+import Bedroom3 from './components/Bedroom/Bedroom3';
 
 class App extends Component {
   render() {
@@ -15,13 +16,13 @@ class App extends Component {
         {/* <header className="App-header">
           Floor Plan
         </header> */}
-        <div className="component">
+        <div className="component gridComponent">
           <Bedroom1 />
           <Kitchen />
-          <Bath />
+          <FullBath />
           <Bedroom2 />
           <LivingRoom />
-          <Bath />
+          <HalfBath />
           <Bedroom3 />
         </div>
       </div>

@@ -5,9 +5,11 @@ import Sink from './Sink';
 
 const Kitchen = (props) => (
   <div className="component Kitchen">
+    <div className="appliances">
+      <Oven />
+      <Sink />
+    </div>
     Kitchen
-    <Oven />
-    <Sink />
   </div>
 );
 

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const LivingRoom = (props) => (
-  <div className="component LivingRoom">
+  <div className="component LivingRoom flex">
     LivingRoom
   </div>
 );

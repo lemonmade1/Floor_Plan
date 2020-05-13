@@ -2,16 +2,27 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  color: white;
 }
 
-body {
+html {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding: 1em;
+}
+
+body, #root, .App {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 
+    -apple-system, BlinkMacSystemFont, 
+    'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    'sans-serif';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  width: 85%;
+  width: 100%;
+  height: 99%;
   margin: auto;
 }
 
@@ -20,8 +31,98 @@ code {
     monospace;
 }
 
-.component {
-  border: 2px solid black;
-  margin: 4px;
-  padding: 4px;
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gridComponent {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  /* grid-template-areas: 
+    "a a e e b1 b2"
+    "a a e e b b"
+    "a a e e b b"
+    "c c e e b b"
+    "a a e e b b"
+    "d d f f g g"
+    "d d f f g g"; */
+}
+
+div.Bedroom1 {
+  grid-area: a;
+  background-color: rgb(47, 113, 135);
+  grid-row: 1 / 4;
+  grid-column: 1 / 4;
+}
+
+div.Kitchen {
+  grid-area: b;
+  background-color: rgb(233, 162, 69);
+  grid-row: 1 / 6;
+  grid-column: 7 / 9;
+}
+
+.appliances {
+  display: inline-grid;
+  flex-flow: column;
+  width: 100%;
+}
+
+div.Oven {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  height: 60px;
+  grid-area: b1;
+  background-color: rgb(199, 72, 34);
+  grid-row: 1 / 2;
+  grid-column: 1 / 5;
+}
+
+div.Sink {
+  height: 60px;
+  grid-area: b2;
+  background-color: rgb(146, 86, 53);
+  grid-row: 1 / 2;
+  grid-column: 5 / 9;
+}
+
+div.FullBath {
+  grid-area: c;
+  background-color: rgb(109, 129, 53);
+  grid-row: 4 / 6;
+  grid-column: 1 / 4;
+}
+
+div.Bedroom2 {
+  grid-area: d;
+  background-color: rgb(47, 113, 135);
+  grid-row: 6 / 10;
+  grid-column: 1 / 4;
+}
+
+div.LivingRoom {
+  grid-area: e;
+  background-color: rgb(200, 171, 132);
+  grid-row: 1 / 6;
+  grid-column: 4 / 7;
+}
+
+div.HalfBath {
+  grid-area: f;
+  background-color: rgb(109, 129, 53);
+  grid-row: 6 / 10;
+  grid-column: 4 / 6; 
+}
+
+div.Bedroom3 {
+  grid-area: g;
+  background-color: rgb(47, 113, 135);
+  grid-row: 6 / 10;
+  grid-column: 6 / 10;
 }
