@@ -1,6 +1,6 @@
 # FLOOR PLAN
 
-## Wire Frames
+## Wire Frames - Using Grid and Flex-Box
 ![wireframe](https://github.com/lemonmade1/Floor_Plan/blob/master/public/ScreenShot.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
